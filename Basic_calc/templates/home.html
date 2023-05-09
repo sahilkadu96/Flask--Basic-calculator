@@ -1,0 +1,21 @@
+<!--extending from base file-->
+<!--this is our main home page for calculator-->
+{% extends "base.html" %}
+{% block content %}
+<h1>Operations of two numbers</h1>
+<div class="container">
+    <form method="POST">
+        {{form.hidden_tag()}}
+        {{form.num1.label}}{{form.num1}}
+        <br>
+        {{form.num2.label}}{{form.num2}}
+        <br>
+        {{form.ope.label}}{{form.ope}}
+        <br>
+        {{form.submit()}}
+    </form>
+</div>
+{% endblock %}
+
+
+
